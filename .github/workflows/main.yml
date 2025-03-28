@@ -28,7 +28,7 @@ jobs:
 
         # Build and push to DockerHub
       - name: Build and push
-        uses: docker/build-push-actions@v6
+        uses: docker/build-push-actions@v5
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
